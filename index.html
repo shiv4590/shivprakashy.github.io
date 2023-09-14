@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0b546e6c3d.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <div class="header">
+        <span><i class="fa-solid fa-phone"></i> 9555270747</span>
+        <ul >
+           <li><a href="shivprakash1632"><ion-icon name="logo-instagram"></ion-icon></li> 
+           <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+           <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li> 
+
+        </ul>
+    </div>
+    <div class="nav">
+        <div class="logo">
+            <img src="./dos.png" alt="">
+        </div>
+        <div class="toggle">
+           <a href="#"> <ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+<li><a href="#">Home</a></li>
+<li><a href="#">Service</a></li>
+<li><a href="#">About us</a> </li>
+<li><a href="#">Contact us</a> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>ME Rockers</h1>
+        <div class="img">
+            <img src="./si.png" alt="">
+            <img src="./hi.png" alt="">
+            <img src="./lk.png" alt="">
+            <img src="./vi.png" alt="">
+            <img src="./ka.png" alt="">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".toggle").on("click",function(){
+            if($(".menu").hasClass("active")){
+                $(".menu").removeClass("active");
+                $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+            }
+            else{
+                $(".menu").addClass("active");
+                $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+            }
+        });
+    });
+</script>
+</body>
+
+</html>
